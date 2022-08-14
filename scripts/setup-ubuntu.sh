@@ -32,10 +32,13 @@ sudo apt install -y \
   libgmock-dev \
   libevent-dev \
   libprotobuf-dev \
+  libprotoc-dev \
   liblz4-dev \
   libzstd-dev \
   libre2-dev \
   libsnappy-dev \
   liblzo2-dev \
   protobuf-compiler \
+  libthrift-dev \
+  thrift-compiler \
   zstd
