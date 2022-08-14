@@ -1,0 +1,6 @@
+[submodule "thirdparty/arrow"]
+	path = thirdparty/arrow
+	url = https://github.com/apache/arrow.git
+[submodule "thirdparty/simdjson"]
+	path = thirdparty/simdjson
+	url = https://github.com/simdjson/simdjson.git
