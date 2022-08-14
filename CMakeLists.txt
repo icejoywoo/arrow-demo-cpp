@@ -30,7 +30,7 @@ set(DEPS_DIR ${CMAKE_SOURCE_DIR}/deps)
 
 if(COMMAND_STATUS EQUAL "1")
     message(FATAL_ERROR "Unable to install arrow to `${CMAKE_CURRENT_SOURCE_DIR}/deps`, "
-            "please run `bash ${CMAKE_CURRENT_SOURCE_DIR}/third_party/install_velox.sh` to fix it.")
+            "please run `bash ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/install_arrow.sh` to fix it.")
 endif()
 
 # add deps to CMAKE_PREFIX_PATH
