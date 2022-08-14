@@ -15,7 +15,7 @@ echo "arrow install path: ${ARROW_INSTALL_PREFIX}"
 cd ${CURRENT_DIR}/arrow/cpp
 
 BUILD_DIR=build-install
-if [ ! -d ${BUILD_DIR} ]; then
+if [ -d ${BUILD_DIR} ]; then
   rm -rf ${BUILD_DIR}
 fi
 
@@ -23,7 +23,7 @@ mkdir ${BUILD_DIR}
 
 cd ${BUILD_DIR}
 
-cmake .. --preset ninja-debug -DCMAKE_INSTALL_PREFIX=${ARROW_INSTALL_PREFIX} -DARROW_EXTRA_ERROR_CONTEXT=ON -DARROW_BUILD_STATIC=ON
+cmake .. --preset ninja-debug -DCMAKE_INSTALL_PREFIX=${ARROW_INSTALL_PREFIX} -DARROW_EXTRA_ERROR_CONTEXT=ON -DARROW_BUILD_STATIC=ON -DProtobuf_SOURCE=BUNDLED
 
 cmake --build .
 
